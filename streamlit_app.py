@@ -116,7 +116,9 @@ if selected == 'Facturas':
                     totals={"marker":{"color":"#698DF5"}}
                 ))
                 Casc.update_layout(
-                    title='Antes y Después de Impuestos'
+                    title='Antes y Después de Impuestos',
+                    width= 550,
+                    height= 500
                 )
                 st.write(Casc)
         with Facturas_por_pagar:
