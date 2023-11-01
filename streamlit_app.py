@@ -346,7 +346,7 @@ if selected == 'Impuestos':
                 c1.markdown("<h4 style= 'color:#47669B ;'>Serie de Tiempo Impuestos</h4>", unsafe_allow_html=True)
                 fig3.update_traces(hovertemplate=None)
                 fig3.update_layout(hovermode="x unified",
-                                  width=600,
+                                  width=1000,
                                   height=500)
                 c1.write(fig3)
                 c2.markdown("<h4 style= 'color:#47669B ;'>Métricas</h4>", unsafe_allow_html=True)
