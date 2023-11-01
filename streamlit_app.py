@@ -348,7 +348,7 @@ if selected == 'Impuestos':
                 fig3.update_layout(hovermode="x unified",
                                   width=1000,
                                   height=500,
-                                  margin=dict(l=15,r=5,b=40,t=40))
+                                  margin=dict(l=25,r=5,b=40,t=40))
                 c1.write(fig3)
                 c2.markdown("<h4 style= 'color:#47669B ;'>Métricas</h4>", unsafe_allow_html=True)
                 selec=c2.selectbox('Selección',('Total','Promedio','Cuenta'))
