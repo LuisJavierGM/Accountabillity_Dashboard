@@ -99,7 +99,7 @@ if selected == 'Facturas':
                 barra=pd.DataFrame()
                 barra['Factura']=lista2
                 barra['Total']=lista1
-                fig=px.bar(barra,x='Factura',y='Total',color='Total',color_continuous_scale=['#22AA33','#6F6EFF','#2A3864'],width=1000,height=1000)
+                fig=px.bar(barra,x='Factura',y='Total',color='Total',color_continuous_scale=['#22AA33','#6F6EFF','#2A3864'],width=350,height=350)
                 fig.update_layout(title='Total Facturas')
                 st.write(fig)
             with Cascada:
