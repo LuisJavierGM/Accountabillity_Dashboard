@@ -345,7 +345,9 @@ if selected == 'Impuestos':
                     fig3.add_trace(go.Scatter(x=cliente3['Fecha'], y=cliente3[visst[i]], name=visst[i], line=dict(color=colores[i], width=1.3)))
                 c1.markdown("<h4 style= 'color:#47669B ;'>Serie de Tiempo Impuestos</h4>", unsafe_allow_html=True)
                 fig3.update_traces(hovertemplate=None)
-                fig3.update_layout(hovermode="x unified")
+                fig3.update_layout(hovermode="x unified",
+                                  width=600,
+                                  height=500)
                 c1.write(fig3)
                 c2.markdown("<h4 style= 'color:#47669B ;'>Métricas</h4>", unsafe_allow_html=True)
                 selec=c2.selectbox('Selección',('Total','Promedio','Cuenta'))
