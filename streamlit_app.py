@@ -25,7 +25,7 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 st.set_page_config(
     layout='wide', 
     initial_sidebar_state='expanded',
-    theme='light'
+    page_title='Accountabillity Dashboard'
 )
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
