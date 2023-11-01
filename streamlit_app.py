@@ -180,7 +180,7 @@ if selected == 'Facturas':
             #Top_clientes['#Facturas']=Top_clientes['#Facturas'].sort_values(ascending=False)
             Top_clientes=Top_clientes.sort_values('#Facturas',ascending=True)
             fig2=px.bar(Top_clientes,x='#Facturas',y='Cliente',color='#Facturas',color_continuous_scale=['#698DF5','#2A3864','#22AA33'],width=450,height=400)
-            fig2.update_layout(margin=dict(l=80,r=40,b=40,t=40))
+            fig2.update_layout(margin=dict(l=250,r=40,b=40,t=40))
             fig2.update(layout_coloraxis_showscale=False)
             st.markdown("<h4 style= 'text-align: center;color: #47669B;'>Top Clientes</h4>", unsafe_allow_html=True)
             st.write(fig2)
