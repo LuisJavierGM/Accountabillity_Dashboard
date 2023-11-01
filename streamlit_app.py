@@ -380,7 +380,7 @@ if selected == 'Impuestos':
                 fig3=go.Figure(data=[go.Pie(labels=df['Impuesto'], values=df['TOTAL'], pull=[0,0.1],hole=.5,
                 text=['IVA','ISR'],
                 hovertemplate = "%{label}: <br><b>TOTAL:</b> %{value} </br> %{percent}")])
-                fig3.update_layout(margin=dict(l=5,r=5,b=10,t=10),
+                fig3.update_layout(margin=dict(l=30,r=5,b=10,t=60),
                                   width=350,
                                   height=350)
                 fig3.update_traces(marker=dict(colors=['#2A3864', '#22AA33']))
